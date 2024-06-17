@@ -1,0 +1,65 @@
+@import url("../vendor/reset.css");
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f7f6;
+}
+
+.reg-content {
+    text-align: center;
+    background-color: #fff;
+    padding: 20px 30px 20px 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 700px;
+}
+
+.forms{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+.form-right input{
+    width: 80%;
+}
+
+.reg-content input, button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 4px;
+}
+
+.forms input:focus-visible{
+    outline-color: #6c5ce7;
+}
+
+button {
+    background-color: #6c5ce7;
+    color: #fff;
+    cursor: pointer;
+    transition: .4s;
+    font-weight: bold;
+    margin-bottom: 0;
+}
+
+button:hover {
+    background-color: #4a3eb2;
+}
+
+.reg-content h2 {
+    margin-bottom: 20px;
+    font-size: 32px;
+    font-weight: 700;
+    color: #6c5ce7;
+}
+
+.reg-content button>a {
+    color: #fff;
+}

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Регистрация</title>
+    <link rel="stylesheet" href="styles/components/reg.css">
+</head>
+
+<body>
+    <div class="reg-content">
+        <h2>Тіркелу</h2>
+        <div class="forms">
+            <div class="form-left">
+                <input type="text" placeholder="Тегі" required>
+                <input type="text" placeholder="Аты" required>
+                <input type="text" placeholder="Әкесінің аты">
+                <input type="date" placeholder="Туған күн" required>
+            </div>
+            <div class="form-right">
+                <input type="tel" placeholder="Телефон" required>
+                <input type="email" placeholder="Email" id="email" required>
+                <input type="password" placeholder="Құпия сөз" id="password" required>
+                <input type="password" placeholder="Құпия сөзді растау" id="rePassword" required>
+            </div>
+        </div>
+        
+        <button id="regBtn" type="button">Тіркелу</button>
+    </div>
+
+    <script src="scripts/register.js"></script>
+</body>
+
+</html>

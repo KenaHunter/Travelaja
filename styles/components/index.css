@@ -1,0 +1,54 @@
+
+@import url("../vendor/reset.css");
+
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f7f6;
+}
+
+.log-content {
+    text-align: center;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+input[type="email"],
+input[type="password"],
+button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    outline: none;
+    border: none;
+}
+
+button {
+    background-color: #6c5ce7;
+    color: #fff;
+    cursor: pointer;
+    font-weight: 700;
+    transition: .4s;
+}
+
+button:hover {
+    background-color: #4a3eb2;
+}
+
+a {
+    color: #6c5ce7;
+}
+
+.log-content h2 {
+    margin-bottom: 20px;
+    font-size: 32px;
+    font-weight: 700;
+    color: #6c5ce7;
+}

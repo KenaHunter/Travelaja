@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Главная</title>
+    <link rel="stylesheet" href="styles/components/main.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="header-container">
+            <div class="header-nav">
+                <a href="main.html">НЕГІЗГІ БЕТ</a>
+                <a href="news.html">ЖАҢАЛЫҚТАР</a>
+            </div>
+            <div class="header-logo">
+                <img src="images/header-logo-img.png" alt="Это лого самой айти школы">
+            </div>
+            <div class="dropdown">
+                <img src="images/header-modal-img.png" alt="">
+                <button onclick="myFunction()" class="dropbtn">Қолданушы</button>
+                <div id="myDropdown" class="dropdown-content">
+                    <a href="#">Ақпарат</a>
+                    <a href="#">Курстар</a>
+                    <a href="index.html">Шығу</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="fixed-btn">
+        <button class="btn" id="scrollBtn" onclick="scrollToTop()">
+            <img src="images/arrow_up.svg" alt="">
+        </button>
+    </div>
+
+    <section class="course">
+        <div class="border-btn">
+            <span>Бірінші қадам жасаңыз</span>
+        </div>
+        <div class="course-content">
+            <h1>«Веб-әзірлеуші» курсы</h1>
+            <p>6 айда веб-әзірлеуші ​​болыңыз. Оқытудың бірінші аптасы тегін.</p>
+        </div>
+        <div class="course-btn">
+            <button class="white-btn" onclick="openModal()">Тегін оқуды бастау</button>
+            <p>Жақында басталатын ағымдар: 29 ақпан.</p>
+        </div>
+    </section>
+    <!-- Модальное окно -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Өтініш қалдыру</h2>
+            <div class="ddd">
+                <input type="text" id="name" placeholder="Сіздің атыңыз">
+                <input type="tel" id="phone" placeholder="+7 (___) ___-__-__">
+                <button class="submit-btn">Өтініш қалдыру</button>
+            </div>
+        </div>
+    </div>
+
+    <section class="course-info">
+        <div class="course-info-item">
+            <div class="course-info-items">
+                <div class="course-info-img">
+                    <img src="images/code-icon.svg" alt="">
+                </div>
+                <div class="course-info-p">
+                    <p>Бағдарлама әрдайым жаңартылып отырады.</p>
+                </div>
+            </div>
+            <div class="course-info-items">
+                <div class="course-info-img">
+                    <img src="images/code-icon.svg" alt="">
+                </div>
+                <div class="course-info-p">
+                    <p>Лайвкодинг, вебинарлар және жалпы алғанда практика өте көп болады.</p>
+                </div>
+            </div>
+        </div>
+        <div class="course-info-item">
+            <div class="course-info-items">
+                <div class="course-info-img">
+                    <img src="images/code-icon.svg" alt="">
+                </div>
+                <div class="course-info-p">
+                    <p>Сіздің тәлімгерлеріңіз қарапайым колледж студенттері болады. </p>
+                </div>
+            </div>
+            <div class="course-info-items">
+                <div class="course-info-img">
+                    <img src="images/code-icon.svg" alt="">
+                </div>
+                <div class="course-info-p">
+                    <p>Курсты сәтті аяқтап, жобаны қорғаған жағдайда сертификат аласыз.</p>
+                </div>
+            </div>
+        </div>
+        <div class="course-info-item">
+            <div class="course-info-items">
+                <div class="course-info-img">
+                    <img src="images/code-icon.svg" alt="">
+                </div>
+                <div class="course-info-p">
+                    <p>Сіз портфолиоңызға 4 жоба жасайсыз веб-сайттар, веб-қосымшалар.</p>
+                </div>
+            </div>
+            <div class="course-info-items">
+                <div class="course-info-img">
+                    <img src="images/code-icon.svg" alt="">
+                </div>
+                <div class="course-info-p">
+                    <p>Алғашқы жұмыс орнын табуға көмек береміз.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="full-stack">
+        <h2>Full-stack әзірлеуші болғанда сіз не істейсіз?</h2>
+        <div class="full-stack-info">
+            <div class="full-stack-text">
+                <p>
+                    Қысқаша жауап — веб-қосымшалар мен сайттарды әзірлеу үшін код жазу.
+                </p>
+                <p>
+                    Бұл функцияларға жауап беретін серверді әзірлеуді қажет етеді
+                    логикалық және көрнекі бөлікке жауап беретін алдыңғы қатарлы даму
+                    сайт немесе веб-қосымша. Толық стек әзірлеушісі де жауапты
+                    және басқа заттар үшін.
+                </p>
+                <p>
+                    Басқаша айтқанда, сіз әмбебап маман боласыз және түрлі заттар жасай аласыз, мысалы, осы веб-сайтты
+                    дамытыңыз.
+                </p>
+            </div>
+            <div class="full-stack-img">
+                <img src="images/full-stack-image.jpg" alt="">
+            </div>
+        </div>
+    </section>
+
+    <section class="about-profession">
+        <h2>Мамандық жайлы басты ақпарат</h2>
+        <div class="about-profession-info">
+            <div class="plus-minus">
+                <h3>Артықшылықтары және кемшіліктері</h3>
+                <div class="plus">
+                    <p>Артықшылықтары: әмбебап мамандар нарықта жоғары бағаланады; икемділік - сіз әлемнің кез келген
+                        нүктесінен қашықтан жұмыс істей аласыз</p>
+                </div>
+                <div class="minus">
+                    <p>Кемшілігі: бәрін бірден түсіну керек болғандықтан, жеке технологияларға сүңгуге уақыт жоқ.</p>
+                </div>
+            </div>
+            <div class="stack">
+                <h3>Сізге қандай құралдар мен технологияларды білу керек?</h3>
+                <p class="peshka">Сіз мұның барлығын біздің курста үйренесіз - IT саласында техникалық біліміңіз немесе
+                    тәжірибеңіз болмаса да</p>
+                <div class="stacky">
+                    <div class="stack-items">
+                        <div class="stack-item">
+                            <div class="stack-circle"></div>
+                            <p>HTML</p>
+                        </div>
+                        <div class="stack-item">
+                            <div class="stack-circle"></div>
+                            <p>JavaScript</p>
+                        </div>
+                        <div class="stack-item">
+                            <div class="stack-circle"></div>
+                            <p>DOM</p>
+                        </div>
+                        <div class="stack-item">
+                            <div class="stack-circle"></div>
+                            <p>Express</p>
+                        </div>
+                    </div>
+                    <div class="stack-items">
+                        <div class="stack-item">
+                            <div class="stack-circle"></div>
+                            <p>CSS + SCSS</p>
+                        </div>
+                        <div class="stack-item">
+                            <div class="stack-circle"></div>
+                            <p>TypeScript</p>
+                        </div>
+                        <div class="stack-item">
+                            <div class="stack-circle"></div>
+                            <p>Webpack + Vite</p>
+                        </div>
+                        <div class="stack-item">
+                            <div class="stack-circle"></div>
+                            <p>MongoDB</p>
+                        </div>
+                    </div>
+                    <div class="stack-items">
+                        <div class="stack-item">
+                            <div class="stack-circle"></div>
+                            <p>Flexbox</p>
+                        </div>
+                        <div class="stack-item">
+                            <div class="stack-circle"></div>
+                            <p>React</p>
+                        </div>
+                        <div class="stack-item">
+                            <div class="stack-circle"></div>
+                            <p>React Router</p>
+                        </div>
+                        <div class="stack-item">
+                            <div class="stack-circle"></div>
+                            <p>PostgreSQL</p>
+                        </div>
+                    </div>
+                    <div class="stack-items">
+                        <div class="stack-item">
+                            <div class="stack-circle"></div>
+                            <p>Git</p>
+                        </div>
+                        <div class="stack-item">
+                            <div class="stack-circle"></div>
+                            <p>Redux</p>
+                        </div>
+                        <div class="stack-item">
+                            <div class="stack-circle"></div>
+                            <p>ООП</p>
+                        </div>
+                        <div class="stack-item">
+                            <div class="stack-circle"></div>
+                            <p>Nest.js</p>
+                        </div>
+                    </div>
+                    <div class="stack-items">
+                        <div class="stack-item">
+                            <div class="stack-circle"></div>
+                            <p>Bash</p>
+                        </div>
+                        <div class="stack-item">
+                            <div class="stack-circle"></div>
+                            <p>Grid Layout</p>
+                        </div>
+                        <div class="stack-item">
+                            <div class="stack-circle"></div>
+                            <p>Node.js</p>
+                        </div>
+                        <div class="stack-item">
+                            <div class="stack-circle"></div>
+                            <p>Docker</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="salary">
+                <h3>Орташа жалақы</h3>
+                <p class="top-p">Курстан кейін сіз JUNIOR әзірлеуші ​​лауазымын алып, әрі қарай өсе аласыз</p>
+                <div class="salary-item1">
+                    <h4>300 000тг</h4>
+                    <p>Junior</p>
+                </div>
+                <div class="salary-item2">
+                    <h4>600 000тг</h4>
+                    <p>Middle</p>
+                </div>
+                <div class="salary-item3">
+                    <h4>1 500 000тг</h4>
+                    <p>Lead</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="bottom-modal">
+        <button class="white-btn" onclick="openModal()">Тегін оқуды бастау</button>
+    </div>
+
+    <div class="container">
+        <h2>Frequently Asked Questions</h2>
+        <div class="accordion">
+            <div class="accordion-item">
+                <button id="accordion-button-1" aria-expanded="false">
+                    <span class="accordion-title">Why is the moon sometimes out during the day?</span>
+                    <span class="icon" aria-hidden="true"></span>
+                </button>
+                <div class="accordion-content">
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                        incididunt ut labore et dolore magna aliqua. Elementum sagittis vitae et leo duis ut.
+                        Ut tortor pretium viverra suspendisse potenti.
+                    </p>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <button id="accordion-button-2" aria-expanded="false">
+                    <span class="accordion-title">Why is the sky blue?</span>
+                    <span class="icon" aria-hidden="true"></span>
+                </button>
+                <div class="accordion-content">
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                        incididunt ut labore et dolore magna aliqua. Elementum sagittis vitae et leo duis ut.
+                        Ut tortor pretium viverra suspendisse potenti.
+                    </p>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <button id="accordion-button-3" aria-expanded="false">
+                    <span class="accordion-title">Will we ever discover aliens?</span>
+                    <span class="icon" aria-hidden="true"></span>
+                </button>
+                <div class="accordion-content">
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                        incididunt ut labore et dolore magna aliqua. Elementum sagittis vitae et leo duis ut.
+                        Ut tortor pretium viverra suspendisse potenti.
+                    </p>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <button id="accordion-button-4" aria-expanded="false">
+                    <span class="accordion-title">How much does the Earth weigh?</span>
+                    <span class="icon" aria-hidden="true"></span>
+                </button>
+                <div class="accordion-content">
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                        incididunt ut labore et dolore magna aliqua. Elementum sagittis vitae et leo duis ut.
+                        Ut tortor pretium viverra suspendisse potenti.
+                    </p>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <button id="accordion-button-5" aria-expanded="false">
+                    <span class="accordion-title">How do airplanes stay up?</span>
+                    <span class="icon" aria-hidden="true"></span>
+                </button>
+                <div class="accordion-content">
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                        incididunt ut labore et dolore magna aliqua. Elementum sagittis vitae et leo duis ut.
+                        Ut tortor pretium viverra suspendisse potenti.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <footer>
+        <div class="footer-container">
+            <div class="footer-top">
+                <div class="footer-call">
+                    <p>Байланыс орталығы</p>
+                    <h4>+7(777)123-12-12</h4>
+                </div>
+                <div class="footer-email">
+                    <p>Электронды адрес</p>
+                    <h4>Qadam@mail.kz</h4>
+                </div>
+                <div class="footer-social">
+                    <p>Әлеуметтік желілер</p>
+                    <div class="footer-icons">
+                        <img src="images/telegram.svg" alt="">
+                        <img src="images/tiktok.svg" alt="">
+                        <img src="images/insta.svg" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="footer-bottom--left">
+                    <img src="images/LOGGGO 3.svg" alt="">
+                    <h3>QADAM</h3>
+                    <div class="left-border"></div>
+                    <p>Қазақстандағы <br> бағдарламалау мектебі</p>
+                </div>
+                <div class="footer-bottom--right">
+                    <h3>Біздің серіктестер</h3>
+                    <div class="right-border"></div>
+                    <p>Қарағанды жоғары <br>политехникалық колледжі</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="scripts/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,276 @@
+@import url("../vendor/reset.css");
+
+.container {
+    max-width: 1600px;
+    margin: 0 auto;
+    /* padding: 0 15px; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header {
+    background-color: #4A3EB2;
+    padding: 10px 0;
+}
+
+.header-modal {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #fff;
+    font-weight: 600;
+}
+
+.header-nav a {
+    color: #fff;
+    font-weight: 600;
+    margin-right: 10px;
+}
+
+.header-modal img {
+    width: 40px;
+}
+
+.header-logo img {
+    width: 70px;
+}
+
+/* INFO бөлімінін стильдері */
+
+.info {
+    width: 1600px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    background-color: #fff;
+    padding: 40px 30px;
+}
+
+.info-left--main {
+    display: flex;
+    /* background-image: url("../../images/programmist-janalyq.png"); */
+    background: 
+            linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.5) 100%),
+            url("../../images/programmist-janalyq.png");
+    background-size: cover;
+    background-position: center;
+    margin-right: 15px;
+    padding: 30px;
+    color: #fff;
+    height: 650px;
+    align-items: end;
+    flex-wrap: wrap;
+}
+
+.main-news-text {
+    display: flex;
+    align-items: end;
+    margin-top: 480px;
+    font-weight: 400;
+}
+
+.info-left--main p {
+    font-size: 36px;
+    color: #fff;
+}
+
+.main-bottom {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+}
+
+.main-bottom p {
+    font-size: 14px;
+}
+
+.info-left--child {
+    margin-top: 25px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 60px;
+    margin-right: 15px;
+}
+
+.info-right-child-items {
+    /* width: calc(33.33% - 30px); */
+    width: 325px;
+}
+
+.info-right-child-text {
+    font-size: 18px;
+    font-weight: 500;
+    margin-top: 10px;
+}
+
+.child-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.view-comments {
+    display: flex;
+    gap: 15px;
+}
+
+.comments {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+
+.info-right-top {
+    display: flex;
+    /* align-items: center; */
+    border-bottom: 1px solid #7F8188;
+}
+
+.info-right-top span {
+    /* display: inline-block; */
+    /* text-align: center; */
+    padding: 13px 45px;
+    cursor: pointer;
+}
+
+.info-right-top span:first-child{
+    background-color: #4A3EB2;
+    color: #fff;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.info-right-child:first-child {
+    margin-top: 30px;
+}
+
+.info-right-child {
+    width: 380px;
+    margin-bottom: 30px;
+}
+
+.info-right-child p {
+    font-size: 18px;
+}
+
+.info-right-child-item {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    
+}
+
+.info-right-child-item p {
+    font-size: 14px;
+    color: #7F8188;
+}
+
+.view {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+
+.poloska {
+    background-color: #7F8188;
+}
+
+.more-news {
+    display: flex;
+    gap: 20px;
+    color: #4A3EB2;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.more-news img {
+    width: 20px;
+}
+
+
+
+/* Footer бөлімі */
+footer {
+    background-color: #4A3EB2;
+    padding: 20px 0;
+}
+
+.footer-container {
+    width: 1600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+}
+
+.footer-call h4 {
+    font-size: 22px;
+    font-weight: 700;
+    margin-top: 22px;
+}
+
+.footer-email h4 {
+    font-size: 22px;
+    font-weight: 700;
+    margin-top: 22px;
+}
+
+.footer-container img{
+    background-color: transparent;
+}
+
+.footer-top {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px solid #fff;
+    margin-bottom: 20px;
+    padding: 10px 0;
+}
+
+
+
+.footer-icons {
+    display: flex;
+    justify-content: right;
+    gap: 10px;
+    margin-top: 16px;
+}
+
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-bottom h3 {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.footer-bottom--left, .footer-bottom--right {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.footer-bottom--left img {
+    width: 80px;
+}
+
+.left-border, .right-border {
+    border: 1.2px solid #fff;
+    height: 40px;
+}
+
+
+.bottom-modal {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 150px;
+}
